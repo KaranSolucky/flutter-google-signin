@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.googlesignin">
    <application
-        android:label="auth_provider_app"
+        android:label="google_siginin"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

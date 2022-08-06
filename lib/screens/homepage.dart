@@ -20,7 +20,9 @@ class HomePage extends StatelessWidget {
                   Provider.of<GoogleSignInProvider>(context, listen: false);
 
               if (provider.isSigningIn) {
-                return BuildLoading();
+                return Center(
+                  child: CircularProgressIndicator(),
+                );
               } else if (snapshot.hasData) {
                 return LoggedInPage();
               } else {
@@ -30,8 +32,4 @@ class HomePage extends StatelessWidget {
           )),
     );
   }
-
-  Widget BuildLoading() => Center(
-        child: CircularProgressIndicator(),
-      );
 }
